@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Management System</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family:Arial;
+        box-sizing:border-box;
+    }
+
+    body{
+        background:#111;
+        color:white;
+    }
+
+    /* HEADER */
+    header{
+        background:#000;
+        padding:20px 40px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:sticky;
+        top:0;
+        z-index:10;
+    }
+
+    header h1{
+        color:#e63946;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin-left:25px;
+        font-size:18px;
+        transition:0.3s;
+    }
+    nav a:hover{color:#e63946;}
+
+    /* HOME */
+    #home{
+        height:90vh;
+        background:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') no-repeat center/cover;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+    #home h2{
+        font-size:50px;
+        font-weight:700;
+        text-shadow:0 0 10px black;
+    }
+    #home p{
+        font-size:20px;
+        margin-top:15px;
+    }
+
+    /* ABOUT */
+    #about{
+        padding:70px 40px;
+        text-align:center;
+    }
+
+    #about h2{
+        font-size:40px;
+        color:#e63946;
+        margin-bottom:20px;
+    }
+
+    #about p{
+        max-width:800px;
+        margin:auto;
+        line-height:1.6;
+        font-size:18px;
+    }
+
+    /* MEMBERSHIP */
+    #membership{
+        padding:70px 40px;
+        text-align:center;
+    }
+
+    #membership h2{
+        color:#e63946;
+        font-size:40px;
+        margin-bottom:25px;
+    }
+
+    .plan-boxes{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:30px;
+        margin-top:30px;
+    }
+
+    .plan{
+        width:280px;
+        background:#1a1a1a;
+        padding:25px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(255,255,255,0.1);
+        transition:0.3s;
+    }
+    .plan:hover{
+        transform:scale(1.05);
+        box-shadow:0 0 20px rgba(255,0,0,0.5);
+    }
+
+    .plan h3{
+        color:#e63946;
+        margin-bottom:10px;
+        font-size:25px;
+    }
+
+    .plan p{
+        font-size:16px;
+        margin:8px 0;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Gym Management System</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#membership">Membership</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section id="home">
+    <h2>Welcome to Our Gym</h2>
+    <p>Your journey to fitness begins here</p>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        We are a professional gym offering modern equipment, certified trainers,
+        and personalized fitness programs. Our goal is to help you stay fit,
+        strong, and healthy with the best guidance and support.
+    </p>
+</section>
+
+<!-- MEMBERSHIP SECTION -->
+<section id="membership">
+    <h2>Membership Plans</h2>
+
+    <div class="plan-boxes">
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>Gym Access</p>
+            <p>Timing: 10am - 5pm</p>
+            <p><strong>2000 PKR/month</strong></p>
+        </div>
+
+        <div class="plan">
+            <h3>Standard Plan</h3>
+            <p>Gym + Cardio Zone</p>
+            <p>Timing: 8am - 10pm</p>
+            <p><strong>3500 PKR/month</strong></p>
+        </div>
+
+        <div class="plan">
+            <h3>Premium Plan</h3>
+            <p>All Access + Personal Trainer</p>
+            <p>Timing: 24/7</p>
+            <p><strong>6000 PKR/month</strong></p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
